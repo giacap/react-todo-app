@@ -1,0 +1,194 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.app{
+  min-height: 100vh;
+  background-color: lightskyblue;
+  padding-bottom: 10px;
+}
+
+
+
+/* HEADER */
+.titolo-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: red; */
+  padding: 15px;
+}
+
+.titolo{
+  font-size: 40px;
+  font-weight: 500;
+}
+
+
+
+
+
+
+/* FORM */
+.form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  /* background-color: green; */
+}
+
+.input{
+  font-size: 28px;
+  margin-right: 10px;
+}
+
+.submit-btn{
+  font-size: 18px;
+  padding: 5px 10px;
+  background-color: #333;
+  border: none;
+  color: #fff;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+
+
+
+/* FILTRO */
+.select-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  /* background-color: yellow; */
+}
+
+.select{
+  font-size: 18px;
+}
+
+
+
+
+
+/* TODO */
+.todo-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 600px;
+  margin: auto;
+  padding: 10px;
+  background-color: rgb(240, 217, 15);
+  margin-bottom: 5px;
+}
+
+.todo-container div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+.todo-container div li{
+  font-size: 20px;
+  width: 400px;
+  text-align: center;
+}
+
+.completaTodo-btn, .eliminaTodo-btn{
+  font-size: 20px;
+  padding: 5px 10px;
+  cursor: pointer;
+  border: none;
+}
+
+.completaTodo-btn{
+  background-color: green;
+}
+
+.eliminaTodo-btn{
+  background-color: red;
+}
+
+
+.todo-completato{
+  opacity: 0.2;
+  text-decoration: line-through;
+}
+
+
+
+
+/* MEDIA QUERIES */
+@media (max-width: 645px){
+
+  .titolo{
+    font-size: 24px;
+  }
+
+
+  .input{
+    font-size: 16.8px
+  }
+
+  .submit-btn, .select{
+    font-size: 10.8px;
+  }
+
+
+
+  .todo-container{
+    width: 400px;
+  }
+
+  .todo-container div li{
+    width: 200px;
+    font-size: 12px;
+  }
+
+
+  .completaTodo-btn, .eliminaTodo-btn{
+    font-size: 12px;
+  }
+}
+
+
+
+
+
+@media (max-width: 430px){
+  .titolo{
+    font-size: 16px;
+  }
+
+
+  .input{
+    font-size: 11.2px
+  }
+
+  .submit-btn, .select{
+    font-size: 10px;
+  }
+
+
+
+  .todo-container{
+    width: 300px;
+  }
+
+  .todo-container div li{
+    width: 150px;
+    font-size: 10px;
+  }
+
+
+  .completaTodo-btn, .eliminaTodo-btn{
+    font-size: 10px;
+  }
+}
